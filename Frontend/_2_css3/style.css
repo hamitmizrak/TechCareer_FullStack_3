@@ -1,3 +1,10 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 p {
     color: blue;
     color: #123;
@@ -71,7 +78,6 @@ ul {
     transition: 3s all;
     text-transform: uppercase;
     position: fixed;
-
 }
 
 .my_ul li:hover{
@@ -79,6 +85,7 @@ ul {
     color:black;
     transition: ease-in-out 2s all;
     cursor: pointer;
+    transform: rotate(360deg);
 }
 
 #back_to_top{
