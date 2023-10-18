@@ -135,6 +135,20 @@ div~p{
     background-color: rgb(1, 9, 15);
 } */
 
+/*my_clearfix*/
+.my_clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*Float*/
+#my_image{
+    float: right;
+    width: 25%;
+}
+
+/*Flex*/
 
 /*Responsive Design*/
 /*
