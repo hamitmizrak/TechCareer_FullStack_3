@@ -1,0 +1,48 @@
+p{
+    color:blue;
+    color:#123;
+    color:#112233;
+    color:rgb(0,0,255);
+    color:rgba(0,0,255,0.5);
+    color:rgba(255, 247, 0, 0.8);
+
+    background-color: black;
+
+    margin-top:2rem;
+    margin-right: 2rem;
+    margin-bottom:2rem;
+    margin-left:2rem;
+    margin:4rem;
+    margin:4rem 2rem;
+
+    padding-top:2rem;
+    padding-right: 2rem;
+    padding-bottom:2rem;
+    padding-left:2rem;
+    padding:4rem;
+    padding:4rem 2rem;
+
+    border:2px solid rgba(234, 10, 10, 0.9);
+
+    border-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 0;
+   
+    text-indent: 2rem;
+    text-align: justify;
+    text-decoration: none;
+
+    letter-spacing:0.01rem;
+    word-spacing: 0.2rem;
+    line-height: 1;
+
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-transform: capitalize;
+
+    column-count: 2;
+    column-rule:1px solid blue;
+   
+}
