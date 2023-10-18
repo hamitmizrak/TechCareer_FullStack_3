@@ -1,8 +1,20 @@
-
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --template_bg_color: black;
+    --template_color: white;
+}
+
+header {
+    background-image: url('../image/residential-8278516_1280.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
 }
 
 p {
@@ -55,7 +67,7 @@ p {
 }
 
 .div_class {
-    background-color: blueviolet;
+    background-color: var(--template_bg_color);
     color: white;
     max-width: 100%;
     height: 100px;
@@ -73,26 +85,31 @@ ul {
 .my_ul li {
     display: inline-block;
     background-color: black;
-    color:white;
-    padding:0.5rem 1.2rem;
+    color: white;
+    padding: 0.5rem 1.2rem;
     transition: 3s all;
     text-transform: uppercase;
     position: fixed;
 }
 
-.my_ul li:hover{
-    background-color:white ;
-    color:black;
+.my_ul li:hover {
+    background-color: white;
+    color: black;
     transition: ease-in-out 2s all;
     cursor: pointer;
     transform: rotate(360deg);
 }
 
-#back_to_top{
+#back_to_top {
     position: fixed;
     right: 0;
-    bottom:0;
+    bottom: 0;
     background-color: blue;
-    color:white;
+    color: white;
     padding: .5rem 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
