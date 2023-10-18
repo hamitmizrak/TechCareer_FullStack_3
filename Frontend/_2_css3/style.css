@@ -6,7 +6,7 @@
 
 :root {
     --template_bg_color: black;
-    --template_color: white;
+    --template_color: white!important;
 }
 
 header {
@@ -115,7 +115,7 @@ img {
 }
 
 /* Selector */
-p{
+/* p{
     background-color: blue;
 }
 
@@ -133,4 +133,60 @@ div+p{
 
 div~p{
     background-color: rgb(1, 9, 15);
+} */
+
+
+/*Responsive Design*/
+/*
+468px <=Break Point <=767px
+768px <=Break Point <=991px
+992px <=Break Point <=1199px
+1200px <=Break Point
+*/
+@media (min-width:468px) and (max-width:767px) {
+    .responsive_design{
+        background-color: red;
+        width: 100%;
+        height: 250px;
+        display: inline-block;
+        margin-bottom:2px;
+        color:white;
+        padding:100px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .responsive_design{
+        background-color: blue;
+        width: 49%;
+        height: 250px;
+        display: inline-block;
+        margin-bottom:2px;
+        color:white;
+        padding:100px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .responsive_design{
+        background-color: orange;
+        width: 33%;
+        height: 250px;
+        display: inline-block;
+        margin-bottom:2px;
+        color:white;
+        padding:100px;
+    }
+}
+
+@media (min-width:1200px) {
+    .responsive_design{
+        background-color: black;
+        width: 24%;
+        height: 250px;
+        display: inline-block;
+        margin-bottom:2px;
+        color:white;
+        padding:100px;
+    }
 }
