@@ -1,40 +1,40 @@
-p{
-    color:blue;
-    color:#123;
-    color:#112233;
-    color:rgb(0,0,255);
-    color:rgba(0,0,255,0.5);
-    color:rgba(255, 247, 0, 0.8);
+p {
+    color: blue;
+    color: #123;
+    color: #112233;
+    color: rgb(0, 0, 255);
+    color: rgba(0, 0, 255, 0.5);
+    color: rgba(255, 247, 0, 0.8);
 
     background-color: black;
 
-    margin-top:2rem;
+    margin-top: 2rem;
     margin-right: 2rem;
-    margin-bottom:2rem;
-    margin-left:2rem;
-    margin:4rem;
-    margin:4rem 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin: 4rem;
+    margin: 4rem 2rem;
 
-    padding-top:2rem;
+    padding-top: 2rem;
     padding-right: 2rem;
-    padding-bottom:2rem;
-    padding-left:2rem;
-    padding:4rem;
-    padding:4rem 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding: 4rem;
+    padding: 4rem 2rem;
 
-    border:2px solid rgba(234, 10, 10, 0.9);
+    border: 2px solid rgba(234, 10, 10, 0.9);
 
     border-radius: 2rem;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 0;
-   
+
     text-indent: 2rem;
     text-align: justify;
     text-decoration: none;
 
-    letter-spacing:0.01rem;
+    letter-spacing: 0.01rem;
     word-spacing: 0.2rem;
     line-height: 1;
 
@@ -43,6 +43,49 @@ p{
     text-transform: capitalize;
 
     column-count: 2;
-    column-rule:1px solid blue;
-   
+    column-rule: 1px solid blue;
+
+}
+
+.div_class {
+    background-color: blueviolet;
+    color: white;
+    max-width: 100%;
+    height: 100px;
+    margin-bottom: 0.2rem;
+
+    -webkit-box-shadow: 11px 20px 16px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 20px 16px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 11px 20px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.my_ul li {
+    display: inline-block;
+    background-color: black;
+    color:white;
+    padding:0.5rem 1.2rem;
+    transition: 3s all;
+    text-transform: uppercase;
+    position: fixed;
+
+}
+
+.my_ul li:hover{
+    background-color:white ;
+    color:black;
+    transition: ease-in-out 2s all;
+    cursor: pointer;
+}
+
+#back_to_top{
+    position: fixed;
+    right: 0;
+    bottom:0;
+    background-color: blue;
+    color:white;
+    padding: .5rem 1rem;
 }
