@@ -1,0 +1,138 @@
+/*
+project name    : Register
+project author  : Hamit Mızrak
+project date    : 18/10/2023
+project version : v1.0.0
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ***************************************************************************** */
+/* COMMON */
+/* ROOT */
+:root {
+    --template_bg_color: black;
+    --template_color: white !important;
+    --icon_color: rgb(120, 245, 23) !important;
+}
+
+html {
+    font-size: 15px;
+}
+
+
+body {
+    position: relative;
+    background-color: var(--template_bg_color);
+    color: var(--template_color);
+}
+
+/*my_clearfix*/
+.my_clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ***************************************************************************** */
+/* Heading */
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+/*paragraf*/
+.paragraf {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem auto;
+}
+
+/*Container*/
+#container_id {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-shadow: 10px 10px 40px 10px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 10px 10px 40px 10px rgba(255, 255, 255, 0.8);
+    box-shadow: 10px 10px 40px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* INPUT */
+
+/* ICON */
+.icon_class {
+    position: absolute;
+    color: var(--icon_color);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.4rem;
+}
+
+.input_class {
+    width: 100%;
+    border: 1px solid lightblue;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--template_color);
+    font-size: 0.9rem;
+    padding:1rem 1rem 1rem 2rem;
+}
+
+/*.input_class:focus{}*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus{
+    background-color: var(--template_color);
+    color:transparent;
+}
+
+/*BUTTON*/
+.btn_button {
+    margin-top: 0.8rem;
+}
+.btn_button button,input[type="reset"]{
+    background-color:blue;
+    color:white;
+    padding:0.4rem 0.5rem;
+    transition: 3s all;
+}
+
+.btn_button button:hover,input[type="reset"]:hover{
+    cursor: pointer;
+    background-color:white;
+    color:blue;
+    transition: ease-out 2s all;
+}
+
+/*RD*/
