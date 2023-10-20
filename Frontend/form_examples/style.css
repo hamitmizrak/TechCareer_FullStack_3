@@ -26,8 +26,9 @@ html {
 
 body {
     position: relative;
-    background-color: var(--template_bg_color);
-    color: var(--template_color);
+    /* background-color: var(--template_bg_color);
+    */
+    color: var(--template_color); 
 }
 
 /*my_clearfix*/
