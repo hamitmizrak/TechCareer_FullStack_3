@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../image/residential-8278516_1280 (1).jpg" type="image/x-icon">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- start Codes -->
+
+    <div class="parallax_image">
+        <h1 class="heading">Register</h1>
+        <p class="paragraf" style="text-align: center;">Register Html -css -RD - Bootstrap - Javascript jquery Lorem
+            ipsum
+            dolor sit amet consectetur adipisicing elit.</p>
+
+        <!-- CONTAINER -->
+        <div id="container_id">
+            <form action="#" onsubmit="event.preventDefault();" name="form_data" id="form_data" method="get"
+                autocomplete="on">
+                <fieldset>
+                    <legend>Register</legend>
+                    <table>
+                        <!-- NAME -->
+                        <tr>
+                            <td>
+                                <label for="uname">Adınız: </label>
+                            </td>
+                            <td>
+                                <div class="div_input_class">
+                                    <i class="icon_class fa-solid fa-circle-user"></i>
+                                    <input type="text" class="input_class" name="uname" id="uname"
+                                        placeholder="Adınız ..." value="Hamit" required autofocus
+                                        title="Adınızı giriniz !" />
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- SURNAME -->
+                        <tr>
+                            <td>
+                                <label for="usurname">Soyadınız: </label>
+                            </td>
+                            <td>
+                                <div class="div_input_class">
+                                    <i class="icon_class fa-solid fa-circle-user"></i>
+                                    <input type="text" class="input_class" name="usurname" id="usurname"
+                                        placeholder="Soyadınız ..." value="Mızrak" required
+                                        title="Soyadınız giriniz !" />
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- EMAIL -->
+                        <tr>
+                            <td>
+                                <label for="uemail">Emailiniz: </label>
+                            </td>
+                            <td>
+                                <div class="div_input_class">
+                                    <i class="icon_class fa-solid fa-envelope"></i>
+                                    <input type="email" class="input_class" name="uemail" id="uemail"
+                                        value="hamitmizrak@gmail.com" placeholder="Emailiniz ..." required
+                                        title="Emailinizi giriniz !" />
+                                </div>
+
+                            </td>
+                        </tr>
+
+                        <!-- PASSWORD -->
+                        <tr>
+                            <td>
+                                <label for="upassword">Şifreniz: </label>
+                            </td>
+                            <td>
+                                <div class="div_input_class">
+                                    <i class="icon_class fa-solid fa-key"></i>
+                                    <input type="password" class="input_class" name="upassword" id="upassword"
+                                        value="123456789" placeholder="Şifreniz ..." required
+                                        title="Şifreniz giriniz !" />
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- GENDER -->
+                        <tr>
+                            <td>
+                                <label><i class="fa-solid fa-venus-mars"></i> </label>
+                            </td>
+                            <td>
+                                <div class="div_input_class"></div>
+                                <input type="radio" name="gender" id="men" checked title="Bayan" />Bayan
+                                <input type="radio" name="gender" id="woman" title="Erkek" />Erkek
+                            </td>
+                        </tr>
+
+                        <!-- READ ME -->
+                        <tr>
+                            <td>
+                                <label><i class="fa-solid fa-book-open-reader"></i> </label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="readme" id="readme" title="Bayan" checked />is read me ?
+                            </td>
+                        </tr>
+
+                        <!-- SEND -->
+                        <tr>
+                            <td>
+                                <label>Send: </label>
+                            </td>
+                            <td>
+                                <div class="btn_button">
+                                    <input type="reset" name="reset" id="reset" title="Temizle" value="Temizle" />
+                                    <button type="submit" name="submit" id="submit" title="Gönder">
+                                        Gönder
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!-- end Codes -->
+</body>
+
+</html>
