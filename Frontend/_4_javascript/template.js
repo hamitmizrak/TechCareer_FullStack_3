@@ -51,13 +51,13 @@
 
 //  const localVariable1=true;
 
- /////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
 // Operatorler
- // + - * / % ! &&=VE ||=VEYA
- // x++ ,  ++x , x-- , --x
- // x++;
- // x=x+1;
- // x+=1;
+// + - * / % ! &&=VE ||=VEYA
+// x++ ,  ++x , x-- , --x
+// x++;
+// x=x+1;
+// x+=1;
 
 ///////////////////////////////////////////////////////////////// 
 // // let userData=prompt("Lütfen adınızı giriniz ");
@@ -130,22 +130,26 @@
 
 ///////////////////////////////////////////////////////////////// 
 
+// (()=>{
+//     console.log("Immedia Arrow Function");
+// })()
+
 // Function
-function normFunction(){
+function normFunction() {
     console.log("norm Function");
-} 
+}
 normFunction()
 
 // Anonymous
-let anonymousFunction=function (){
+let anonymousFunction = function () {
     console.log("anonymous Function");
-} 
+}
 anonymousFunction()
 
 // Arrow
-const arrowFunction= ()=>{
+const arrowFunction = () => {
     console.log("arrow Function Function");
-} 
+}
 arrowFunction()
 
 // Immedia Function
@@ -163,26 +167,113 @@ arrowFunction()
 //////////////////////////////////////////////////////////////////
 // Conditional
 
+// if else
+let conditional = () => {
+    let number = 5;
+    if (number > 0) {
+        console.log("pozitif");
+    } else {
+        console.log("negatif");
+    }
+}
+conditional();
+
+// ternary
+let ternary = () => {
+    let number = 5;
+    let result = (number > 0) ? "pozitif" : "negatif";
+    console.log(result);
+}
+ternary();
+
+// if elseif else
+let conditional2 = () => {
+    let number = 0;
+    if (number > 0) {
+        console.log("pozitif");
+    } else if (number === Number("0")) {
+        console.log("Sıfır");
+    } else {
+        console.log("negatif");
+    }
+}
+conditional2();
+
+
+
+// if elseif else
+let conditional3 = () => {
+    let number = 5;
+    if (number === 1) {
+        console.log("sayı 1");
+    } else if (number === 2) {
+        console.log("sayı 2");
+    } else if (number === 3) {
+        console.log("sayı 3");
+    } else if (number === 4) {
+        console.log("sayı 4");
+    } else if (number === 5) {
+        console.log("sayı 5");
+    } else {
+        console.log("1<=X<=5 dışında bir sayıdır");
+    }
+}
+conditional3();
+
+
+// switch case
+let conditional4 = () => {
+    let number = 5;
+
+    switch (number) {
+        case 1:
+            console.log("sayı 1");
+            break;
+        case 2:
+            console.log("sayı 2");
+            break;
+        case 3:
+            console.log("sayı 3");
+            break;
+        case 4:
+            console.log("sayı 4");
+            break;
+        case 5:
+            console.log("sayı 5");
+            break;
+        default:
+            console.log("1<=X<=5 dışında bir sayıdır");
+            break;
+    }
+}
+conditional4();
 
 //////////////////////////////////////////////////////////////////
-// Loop 
-
-
-//////////////////////////////////////////////////////////////////
-// Dizi 
-
+// Loop
+// iterative for
+// while
+// do-while
 
 //////////////////////////////////////////////////////////////////
-// Object 
-
+// Dizi
+// iterative for
+// forin
+// forof
+// forEach
+// map
+// filter
+// fill
 
 //////////////////////////////////////////////////////////////////
-// Event 
+// Object
+
+//////////////////////////////////////////////////////////////////
+// Event
 // LocalStorage
 // setInterval(()=>{},2000) setTimeOut(()=>{},3000)
 
 //////////////////////////////////////////////////////////////////
-// DOM 
+// DOM
 // Listeners
 ////////////////////////////////////////////////////////////////////
 // Form input Handling && jQuery
