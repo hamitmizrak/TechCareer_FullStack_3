@@ -60,56 +60,110 @@
  // x+=1;
 
 ///////////////////////////////////////////////////////////////// 
-// let userData=prompt("Lütfen adınızı giriniz ");
-// console.log(userData);
+// // let userData=prompt("Lütfen adınızı giriniz ");
+// // console.log(userData);
 
 
-// Infinity
-console.log(4/0);
+// // Infinity
+// console.log(4/0);
 
-// NaN
-console.log(4/"asd");
+// // NaN
+// console.log(4/"asd");
 
-// undefined
-let data;
-console.log(data);
-///////////////////////////////////////////////////////////////// 
+// // undefined
+// let data;
+// console.log(data);
+// ///////////////////////////////////////////////////////////////// 
 
-// Cast
-console.log(4+4);
-console.log(4+ Number("4"));
-console.log(4+ parseInt("4"));
-console.log(4+ String(4));
+// // Cast
+// console.log(4+4);
+// console.log(4+ Number("4"));
+// console.log(4+ parseInt("4"));
+// console.log(4+ String(4));
 
-// Math
-console.log(Math.min(2,1,-500,6,900));
-console.log(Math.max(2,1,-500,6,900));
-console.log(Math.abs(-500));
-console.log(Math.sqrt(16));
-console.log(Math.pow(2,5));
+// // Math
+// console.log(Math.min(2,1,-500,6,900));
+// console.log(Math.max(2,1,-500,6,900));
+// console.log(Math.abs(-500));
+// console.log(Math.sqrt(16));
+// console.log(Math.pow(2,5));
 
-console.log(Math.floor(2.9));
-console.log(Math.ceil(2.1));
-console.log(Math.round(5.4));
-console.log(Math.round(5.5));
+// console.log(Math.floor(2.9));
+// console.log(Math.ceil(2.1));
+// console.log(Math.round(5.4));
+// console.log(Math.round(5.5));
 
-console.log((Math.random()*9+1).toFixed(3));
-console.log(Math.floor((Math.random()*9+1).toFixed(3)) );
+// console.log((Math.random()*9+1).toFixed(3));
+// console.log(Math.floor((Math.random()*9+1).toFixed(3)) );
 
-console.log(Math.sin(-1));
+// console.log(Math.sin(-1));
 
 ///////////////////////////////////////////////////////////////// 
 // Function 
+// 1
+function returnsuzParametresiz(){
+    console.log("returnsuz Parametresiz");
+}
+returnsuzParametresiz();
 
+// 2
+function returnsuzParametreli(uname){
+    console.log("returnsuz Parametreli "+uname);
+}
+returnsuzParametreli("Hamit.")
+
+
+// 3
+function returnluParametresiz(){
+   return "returnlu Parametresiz";
+}
+const data3= returnluParametresiz();
+console.log(data3);
+
+
+// 4
+function returnluParametreli(uname,usurname){
+    return "returnlu Parametreli "+uname+usurname;
+ }
+ const data4= returnluParametreli("Hamit", "Mızrak");
+ console.log(data4);
+
+///////////////////////////////////////////////////////////////// 
+// Function 
+// Anonymous
+// Arrow
+// Immedia Function
+
+//////////////////////////////////////////////////////////////////
 // Conditional
 
+
+
+//////////////////////////////////////////////////////////////////
 // Loop 
 
+
+
+
+//////////////////////////////////////////////////////////////////
 // Dizi 
 
+
+
+
+
+//////////////////////////////////////////////////////////////////
 // Object 
 
+
+//////////////////////////////////////////////////////////////////
+// Event 
+// LocalStorage
+
+
+//////////////////////////////////////////////////////////////////
 // DOM 
+// Listeners
 ////////////////////////////////////////////////////////////////////
 // Form input Handling && jQuery
 
