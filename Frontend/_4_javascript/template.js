@@ -101,55 +101,75 @@
 ///////////////////////////////////////////////////////////////// 
 // Function 
 // 1
-function returnsuzParametresiz(){
-    console.log("returnsuz Parametresiz");
-}
-returnsuzParametresiz();
+// function returnsuzParametresiz(){
+//     console.log("returnsuz Parametresiz");
+// }
+// returnsuzParametresiz();
 
-// 2
-function returnsuzParametreli(uname){
-    console.log("returnsuz Parametreli "+uname);
-}
-returnsuzParametreli("Hamit.")
-
-
-// 3
-function returnluParametresiz(){
-   return "returnlu Parametresiz";
-}
-const data3= returnluParametresiz();
-console.log(data3);
+// // 2
+// function returnsuzParametreli(uname){
+//     console.log("returnsuz Parametreli "+uname);
+// }
+// returnsuzParametreli("Hamit.")
 
 
-// 4
-function returnluParametreli(uname,usurname){
-    return "returnlu Parametreli "+uname+usurname;
- }
- const data4= returnluParametreli("Hamit", "Mızrak");
- console.log(data4);
+// // 3
+// function returnluParametresiz(){
+//    return "returnlu Parametresiz";
+// }
+// const data3= returnluParametresiz();
+// console.log(data3);
+
+
+// // 4
+// function returnluParametreli(uname,usurname){
+//     return "returnlu Parametreli "+uname+usurname;
+//  }
+//  const data4= returnluParametreli("Hamit", "Mızrak");
+//  console.log(data4);
 
 ///////////////////////////////////////////////////////////////// 
-// Function 
+
+// Function
+function normFunction(){
+    console.log("norm Function");
+} 
+normFunction()
+
 // Anonymous
+let anonymousFunction=function (){
+    console.log("anonymous Function");
+} 
+anonymousFunction()
+
 // Arrow
+const arrowFunction= ()=>{
+    console.log("arrow Function Function");
+} 
+arrowFunction()
+
 // Immedia Function
+// (function(){
+//     console.log("Immedia Anonymous Function");
+
+// })()
+
+// (()=>{
+//     console.log("Immedia Arrow Function");
+
+// })()
+
 
 //////////////////////////////////////////////////////////////////
 // Conditional
-
 
 
 //////////////////////////////////////////////////////////////////
 // Loop 
 
 
-
-
 //////////////////////////////////////////////////////////////////
 // Dizi 
-
-
-
 
 
 //////////////////////////////////////////////////////////////////
@@ -159,7 +179,7 @@ function returnluParametreli(uname,usurname){
 //////////////////////////////////////////////////////////////////
 // Event 
 // LocalStorage
-
+// setInterval(()=>{},2000) setTimeOut(()=>{},3000)
 
 //////////////////////////////////////////////////////////////////
 // DOM 
