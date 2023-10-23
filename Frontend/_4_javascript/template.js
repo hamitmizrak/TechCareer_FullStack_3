@@ -138,19 +138,19 @@
 function normFunction() {
     console.log("norm Function");
 }
-normFunction()
+//normFunction()
 
 // Anonymous
 let anonymousFunction = function () {
     console.log("anonymous Function");
 }
-anonymousFunction()
+//anonymousFunction()
 
 // Arrow
 const arrowFunction = () => {
     console.log("arrow Function Function");
 }
-arrowFunction()
+//arrowFunction()
 
 // Immedia Function
 // (function(){
@@ -176,7 +176,7 @@ let conditional = () => {
         console.log("negatif");
     }
 }
-conditional();
+//conditional();
 
 // ternary
 let ternary = () => {
@@ -184,7 +184,7 @@ let ternary = () => {
     let result = (number > 0) ? "pozitif" : "negatif";
     console.log(result);
 }
-ternary();
+//ternary();
 
 // if elseif else
 let conditional2 = () => {
@@ -197,7 +197,7 @@ let conditional2 = () => {
         console.log("negatif");
     }
 }
-conditional2();
+//conditional2();
 
 
 
@@ -218,7 +218,7 @@ let conditional3 = () => {
         console.log("1<=X<=5 dışında bir sayıdır");
     }
 }
-conditional3();
+//conditional3();
 
 
 // switch case
@@ -246,73 +246,143 @@ let conditional4 = () => {
             break;
     }
 }
-conditional4();
+//conditional4();
 
 //////////////////////////////////////////////////////////////////
 // Loop
 
 // iterative for
-const loop1=()=>{
-    let sum=0;
-    for (let i = 1; i <=9; i++) {
-        document.writeln(i); 
-        sum+=i;
+const loop1 = () => {
+    let sum = 0;
+    for (let i = 1; i <= 9; i++) {
+        document.writeln(i);
+        sum += i;
     }
-    document.writeln("Sonuç: "+sum)
+    document.writeln("Sonuç: " + sum)
 }
-loop1()
+//loop1()
 // for(;;){}
-document.writeln("<br/>------------<br/>"); 
+//document.writeln("<br/>------------<br/>"); 
 
 // while
-const loop2=()=>{
-    let sum=0;
+const loop2 = () => {
+    let sum = 0;
 
     let i = 1;
-    while ( i <=9) {
-        document.writeln(i); 
-        sum+=i;
-        i=i+1;
+    while (i <= 9) {
+        document.writeln(i);
+        sum += i;
+        i = i + 1;
     }
-    document.writeln("Sonuç: "+sum)
+    document.writeln("Sonuç: " + sum)
 }
-loop2()
+//loop2()
 // while(true){}
-document.writeln("<br/>------------"); 
-
+//document.writeln("<br/>------------"); 
 
 // do-while
-document.writeln("<br/>------------<br/>"); 
+//document.writeln("<br/>------------<br/>"); 
 
 // while
-const loop3=()=>{
-    let sum=0;
-
+const loop3 = () => {
+    let sum = 0;
     let i = 1;
-
-    do{
-        document.writeln(i); 
-        sum+=i;
-        i=i+1;
+    do {
+        document.writeln(i);
+        sum += i;
+        i = i + 1;
     }
-    while ( i <=9);
-    document.writeln("Sonuç: "+sum)
+    while (i <= 9);
+    document.writeln("Sonuç: " + sum)
 }
-loop3()
+//loop3()
 // while(true){}
-document.writeln("<br/>------------"); 
+//document.writeln("<br/>------------"); 
+
+////////////////////////////////////////////////////////////////////// 
+const str=()=>{
+    let value="js ÖĞReniyorum js ";
+    console.log(value);
+    console.log(value.length);
+    console.log(value.trim().length);
+
+    console.log(value.toLowerCase());
+    console.log(value.toUpperCase());
+
+    console.log(value.concat("INC"));
+
+    console.log(value.indexOf("js"));
+    console.log(value.lastIndexOf("js"));
+
+    console.log(value.charAt(1));
+
+    console.log(value.substring(3));
+    console.log(value.substring(0,3));
+
+    console.log(value.replace(value,"yeni değer"));
+
+    console.log(value.startsWith("j"));
+    console.log(value.endsWith(" "));
+}
+//str()
 
 //////////////////////////////////////////////////////////////////
 // Dizi
+let array1 = () => {
+    let data = [4, 5, 1, 3, 6, 7, 2, 8];
+    data[8] = 9;
+    console.log(data);
+    console.log(data[0]);
+    console.log(data[8 - 1]);
+    console.log(data[data.length - 1]);
+
+    // Iterative For
+    for (let i = 0; i < data.length; i++) {
+        document.writeln(data[i]);
+    }
+
+    document.writeln("<br/>------------<br/>");
+    // for Of
+    data.push(44);
+    data.unshift(23);
+    data.pop();
+    data.shift();
+    for (let temp of data) {
+        document.writeln(temp);
+    }
+
+    //data.sort();
+    //data.reverse();
+    data.sort().reverse();
+    document.writeln("<br/>------------<br/>");
+    for (let temp in data) {
+        // document.writeln(temp+" => "+data[temp]+"<br/>");
+        document.writeln(`${temp} => ${data[temp]} <br/>`);
+    }
+
+    document.writeln("<br/>------------<br/>");
+     let result1= data.toString();
+     document.writeln(result1.concat(" 999"));
+
+     document.writeln("<br/>------------<br/>");
+     let data2=[1,2,3,4,5,6,7,8,9]
+     let result2= data2.splice(5,3);
+     document.writeln(result2)
+
+}
+array1()
 // iterative for
 // forin
 // forof
 // forEach
+
 // map
 // filter
 // fill
 
 //////////////////////////////////////////////////////////////////
+// try-catach
+
 // Object
 
 //////////////////////////////////////////////////////////////////
@@ -330,7 +400,7 @@ document.writeln("<br/>------------");
 
 
 
-//////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////
 // ÖDEV
 // Örnek-1
 // Kullanıcıdan aldığımız 2 sayıyı toplayan JS kodu yazınız ? (prompt)
@@ -339,9 +409,9 @@ document.writeln("<br/>------------");
 // number2=Number(prompt("Lütfen 2.sayıyı giriniz"));
 // console.log(number1+number2);
 // Örnek-2
-/* 
-    Kullanıcıdan aldığımız sayıyı dereceden fahrenhayt'a çeviren JS kodu yazınız ?
-    Formül: (derece*9/5)+32   
+/*
+    Kullanıcıdan aldığımız sayıyı dereceden fahrenhayt'a çeviren JS kodu yazınız ?
+    Formül: (derece*9/5)+32
 */
 // let degree=0,fahranhayt=0;
 // degree=Number(prompt("Lütfen Dereceyi giriniz"));
@@ -382,9 +452,9 @@ document.writeln("<br/>------------");
 // 4-çıkan sayının karekökü alsın (Math.sqrt(sayı))
 // 6-)çıkan sonucu 5 bölsün 6/5=1
 // 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
-// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin 
+// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin
 
-// ÖDEV: 
+// ÖDEV:
 // Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
 // (Dikkat: normal  function ile yazınız)
 
@@ -418,7 +488,7 @@ document.writeln("<br/>------------");
 // 5-yuvarlama yapsın 6.0
 // 6-)çıkan sonucu 5 bölsün 6/5=1
 // 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
-// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin 
+// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin
 // Örnek-5 : kullanıcı tarafından girilen bir sayıyı negatif mi pozitif mi olduğu ekran yazdıran algoritma ?
 //NOT: cast kullalım ?
 // Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
@@ -426,7 +496,7 @@ document.writeln("<br/>------------");
 
 
 // ********** ÖNEMLi ******************
-// ÖDEV 
+// ÖDEV
 // kullanıcıdan aldığımız isim soyisim (boşluk var)
 // ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
 // eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
