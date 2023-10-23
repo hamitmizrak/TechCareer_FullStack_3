@@ -472,9 +472,12 @@ const sendData=()=>{
 
 //////////////////////////////////////////////////////////////////
 // D-O-M
+// innerHTML
+// innerText
+// style
 let domManipulation=()=>{
     // alert("dom");
-    let data= document.getElementById("param_id");
+    let data= document.getElgeementById("param_id");
     //let data= document.getElementsByClassName("param_class")[0];
 
     //let data= document.querySelector("#param_id");
@@ -487,9 +490,6 @@ let domManipulation=()=>{
     data.style.padding=`2rem`;
     data.style.marginTop=`2rem`;
 }
-// innerHTML
-// innerText
-// style
 
 //////////////////////////////////////////////////////////////////
 // Object
