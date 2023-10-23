@@ -300,8 +300,8 @@ const loop3 = () => {
 //document.writeln("<br/>------------"); 
 
 ////////////////////////////////////////////////////////////////////// 
-const str=()=>{
-    let value="js ÖĞReniyorum js ";
+const str = () => {
+    let value = "js ÖĞReniyorum js ";
     console.log(value);
     console.log(value.length);
     console.log(value.trim().length);
@@ -317,9 +317,9 @@ const str=()=>{
     console.log(value.charAt(1));
 
     console.log(value.substring(3));
-    console.log(value.substring(0,3));
+    console.log(value.substring(0, 3));
 
-    console.log(value.replace(value,"yeni değer"));
+    console.log(value.replace(value, "yeni değer"));
 
     console.log(value.startsWith("j"));
     console.log(value.endsWith(" "));
@@ -361,38 +361,109 @@ let array1 = () => {
     }
 
     document.writeln("<br/>------------<br/>");
-     let result1= data.toString();
-     document.writeln(result1.concat(" 999"));
+    let result1 = data.toString();
+    document.writeln(result1.concat(" 999"));
 
-     document.writeln("<br/>------------<br/>");
-     let data2=[1,2,3,4,5,6,7,8,9]
-     let result2= data2.splice(5,3);
-     document.writeln(result2)
-
+    document.writeln("<br/>------------<br/>");
+    let data2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let result2 = data2.splice(5, 3);
+    document.writeln(result2)
 }
-array1()
+//array1()
 // iterative for
 // forin
 // forof
-// forEach
 
-// map
-// filter
-// fill
+let randomArray = () => {
+    let arr = [];
+    for (let i = 0; i < 9; i++) {
+        arr[i] = Math.floor(Math.random() * 9 + 1);
+    }
+    //console.log(arr);
+    return arr;
+}
+// randomArray()
+
+const mapForFilter = () => {
+
+    // forEach
+    // map
+    // filter
+
+    let array = randomArray();
+    console.log(array);
+
+    array.filter((value, number, array) => {
+        return value % 2 == 0
+    }).forEach((value, number, array) => {
+        console.log(`${number} => ${value}`);
+    })
+    console.log("-------------");
+    array.map((value, number, array) => {
+        return value += 10;
+    }).forEach((value, number, array) => {
+        console.log(`${number} => ${value}`);
+    })
+    console.log("-------------");
+
+    array.filter((value, number, array) => {
+        return value % 2 == 0;
+    }).map((value, number, array) => {
+        return value += 10;
+    }).forEach((value, number, array) => {
+        console.log(`${number} => ${value}`);
+    })
+}
+//mapForFilter();
 
 //////////////////////////////////////////////////////////////////
-// try-catach
+let dataTry=()=>{
+ // try-catch
+try {
+    alertx("deneme");
+} catch (err) {
+    console.error(err);
+    //console.error(err.name);
+    //console.error(err.message);
+} finally{
+    console.log("db.close");
+    // throw "Hata var bilerek oluşturdum"
+}
 
+console.log("son satır");   
+}
+//dataTry();
+
+
+//////////////////////////////////////////////////////////////////
+// LocalStorage
+const localData=()=>{
+    localStorage.setItem("unique_name","MErhabalaar")
+}
+localData();
+
+const getlocalData=()=>{
+    const data=localStorage.getItem("unique_name")
+    alert(data)
+}
+getlocalData();
+
+//////////////////////////////////////////////////////////////////
+// setInterval(()=>{},2000) 
+// setTimeOut(()=>{},3000)
+// Event
+
+//////////////////////////////////////////////////////////////////
 // Object
 
 //////////////////////////////////////////////////////////////////
-// Event
-// LocalStorage
-// setInterval(()=>{},2000) setTimeOut(()=>{},3000)
-
-//////////////////////////////////////////////////////////////////
 // DOM
-// Listeners
+// innerHTML
+// innerText
+// style
+
+// Event-Listeners
+// document.getElementById("id44").eventListeners("onclick",()=>{})
 ////////////////////////////////////////////////////////////////////
 // Form input Handling && jQuery
 
