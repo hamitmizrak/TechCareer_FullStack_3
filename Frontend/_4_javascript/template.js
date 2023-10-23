@@ -440,36 +440,66 @@ console.log("son satır");
 const localData=()=>{
     localStorage.setItem("unique_name","MErhabalaar")
 }
-localData();
+// localData();
 
 const getlocalData=()=>{
     const data=localStorage.getItem("unique_name")
     alert(data)
 }
-getlocalData();
+// getlocalData();
 
 //////////////////////////////////////////////////////////////////
 // setInterval(()=>{},2000) 
-// setTimeOut(()=>{},3000)
+let data4=()=>{
+    setInterval(()=>{
+        console.log("set Interval");
+    },1000) 
+}
+
+let data5=()=>{
+    setTimeout(()=>{
+        console.log("set Time out");
+    },1000) 
+}
+
+// data5()
+// data4()
+///////////////////////////////////////////////////////////// 
 // Event
+const sendData=()=>{
+    alert("çalıştı")
+}
 
 //////////////////////////////////////////////////////////////////
-// Object
+// D-O-M
+let domManipulation=()=>{
+    // alert("dom");
+    let data= document.getElementById("param_id");
+    //let data= document.getElementsByClassName("param_class")[0];
 
-//////////////////////////////////////////////////////////////////
-// DOM
+    //let data= document.querySelector("#param_id");
+    //let data= document.querySelector(".param_class");
+    
+    data.innerHTML=`<b><mark>Değiştirdi</mark></b>`;
+    data.innerText=`<b><mark>Değiştirdi</mark></b>`;
+    data.style.color=`red`;
+    data.style.backgroundColor=`black`;
+    data.style.padding=`2rem`;
+    data.style.marginTop=`2rem`;
+}
 // innerHTML
 // innerText
 // style
 
+//////////////////////////////////////////////////////////////////
+// Object
+
 // Event-Listeners
-// document.getElementById("id44").eventListeners("onclick",()=>{})
+// document.getElementById("id44").addEventListeners("onclick",()=>{})
 ////////////////////////////////////////////////////////////////////
 // Form input Handling && jQuery
 
 // callback, promise, asyn-await
-
-
 
 ////////////////////////////////////////////////////////////////////
 // ÖDEV
