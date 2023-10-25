@@ -19,12 +19,38 @@
 <body>
     <!-- start codes -->
 
-    <p id="param_id" class="param_class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptatem sapiente nobis eum porro aut ipsa tempora dolor, est perferendis suscipit molestiae labore, doloremque explicabo cupiditate molestias praesentium ratione? Provident.
+    <p id="param_id" class="param_class">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis excepturi odio a perferendis distinctio et, sint ab, voluptatem sapiente qui maxime deleniti omnis dolores labore vitae? Quis, delectus corporis?
+    Vel ipsum eum hic quod molestias, libero sequi recusandae beatae exercitationem soluta aut laboriosam ex ea iure ratione debitis! Accusamus voluptatibus tempora laudantium quibusdam ratione impedit quaerat alias amet veniam.
+    Non, distinctio voluptatibus at dolor neque inventore voluptatem? In corporis fugiat dignissimos earum commodi eius rem voluptas officia ut beatae voluptatum sed, distinctio quis dolore voluptatibus delectus enim impedit quam.
+    Minima tempora qui consequuntur, deserunt molestias, sapiente officiis eaque consequatur praesentium quam hic. Provident, soluta possimus iure ipsam repudiandae nobis aliquam, assumenda mollitia magnam modi explicabo quaerat fuga vel incidunt?
+    Doloribus magnam perspiciatis adipisci eligendi dignissimos architecto unde aliquam, nisi autem ullam minima explicabo fugiat, soluta, possimus reprehenderit sed velit assumenda labore iure cum aspernatur a? Amet voluptatibus libero debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptatem sapiente nobis eum porro aut ipsa tempora dolor, est perferendis suscipit molestiae labore, doloremque explicabo cupiditate molestias praesentium ratione? Provident.
     Atque cupiditate laborum doloribus quibusdam, veniam quis esse corrupti laboriosam iste ad sapiente necessitatibus aperiam eligendi possimus voluptatibus ullam voluptate dicta voluptates! Dolorem corrupti veritatis, ea voluptas quas ipsa architecto!
     Neque magni vero hic tenetur, reiciendis dolores saepe maiores at natus impedit sunt esse rerum quam mollitia officia placeat vel voluptatum error eum commodi velit! Fuga quam inventore ipsa est!
     Totam molestiae soluta aut asperiores facilis eos eum tempore culpa iure? Fuga, reiciendis sed beatae sit enim assumenda, consectetur quasi distinctio quis ducimus nulla dicta neque illo explicabo illum. Asperiores!</p>
     <button onclick="sendData()" class="btn btn-primary">Send</button>
     <button onclick="domManipulation()" class="btn btn-success">DOM</button>
+
+    <br><br><br>
+    <style>
+        #clock{
+            background-color: black;
+            color: white;
+            width: 5rem;
+            padding:0.5rem 1rem;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            opacity: 0.5;
+        }
+    </style>
+    <div id="clock" >00:00:00</div>
+    <script>
+        setInterval(()=>{
+            document.getElementById("clock").textContent=new Date().toLocaleTimeString("tr")
+        },1000);
+    </script>
+    <br><br><br><br>
+
     <!-- <script>
         alert("deneme")
     </script> -->

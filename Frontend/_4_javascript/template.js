@@ -417,56 +417,56 @@ const mapForFilter = () => {
 //mapForFilter();
 
 //////////////////////////////////////////////////////////////////
-let dataTry=()=>{
- // try-catch
-try {
-    alertx("deneme");
-} catch (err) {
-    console.error(err);
-    //console.error(err.name);
-    //console.error(err.message);
-} finally{
-    console.log("db.close");
-    // throw "Hata var bilerek oluşturdum"
-}
+let dataTry = () => {
+    // try-catch
+    try {
+        alertx("deneme");
+    } catch (err) {
+        console.error(err);
+        //console.error(err.name);
+        //console.error(err.message);
+    } finally {
+        console.log("db.close");
+        // throw "Hata var bilerek oluşturdum"
+    }
 
-console.log("son satır");   
+    console.log("son satır");
 }
 //dataTry();
 
 
 //////////////////////////////////////////////////////////////////
 // LocalStorage
-const localData=()=>{
-    localStorage.setItem("unique_name","MErhabalaar")
+const localData = () => {
+    localStorage.setItem("unique_name", "MErhabalaar")
 }
 // localData();
 
-const getlocalData=()=>{
-    const data=localStorage.getItem("unique_name")
+const getlocalData = () => {
+    const data = localStorage.getItem("unique_name")
     alert(data)
 }
 // getlocalData();
 
 //////////////////////////////////////////////////////////////////
 // setInterval(()=>{},2000) 
-let data4=()=>{
-    setInterval(()=>{
+let data4 = () => {
+    setInterval(() => {
         console.log("set Interval");
-    },1000) 
+    }, 1000)
 }
 
-let data5=()=>{
-    setTimeout(()=>{
+let data5 = () => {
+    setTimeout(() => {
         console.log("set Time out");
-    },1000) 
+    }, 1000)
 }
 
 // data5()
 // data4()
 ///////////////////////////////////////////////////////////// 
 // Event
-const sendData=()=>{
+const sendData = () => {
     alert("çalıştı")
 }
 
@@ -475,25 +475,52 @@ const sendData=()=>{
 // innerHTML
 // innerText
 // style
-let domManipulation=()=>{
+let domManipulation = () => {
     // alert("dom");
-    let data= document.getElgeementById("param_id");
+    let data = document.getElgeementById("param_id");
     //let data= document.getElementsByClassName("param_class")[0];
 
     //let data= document.querySelector("#param_id");
     //let data= document.querySelector(".param_class");
-    
-    data.innerHTML=`<b><mark>Değiştirdi</mark></b>`;
-    data.innerText=`<b><mark>Değiştirdi</mark></b>`;
-    data.style.color=`red`;
-    data.style.backgroundColor=`black`;
-    data.style.padding=`2rem`;
-    data.style.marginTop=`2rem`;
+
+    data.innerHTML = `<b><mark>Değiştirdi</mark></b>`;
+    data.innerText = `<b><mark>Değiştirdi</mark></b>`;
+    data.style.color = `red`;
+    data.style.backgroundColor = `black`;
+    data.style.padding = `2rem`;
+    data.style.marginTop = `2rem`;
 }
 
 //////////////////////////////////////////////////////////////////
 // Object
+const objFunction = () => {
+    let person = {
+        "uname": "Hamit",
+        "usurname": "Mızrak",
+        "language": 10,
+        tech: {
+            name: "javascript",
+            year: 1995
+        },
+        software_language: ["java", "javascript", "python"],
+        fullName: function () {
+            return "full  adınız: " + this.uname + this.usurname;
+        }
+    }
+    console.log(person);
+    console.log(person.uname);
+    console.log(person["uname"]);
+    console.log(person.usurname.toUpperCase());
+    console.log(person.tech.name);
+    console.log(person.software_language[0]);
+    console.log(person.fullName());
 
+    let objectToStringjson=JSON.stringify(person);
+    console.log(objectToStringjson.toUpperCase());
+    console.log(objectToStringjson.substring(10,10+5));
+    console.log(JSON.parse(objectToStringjson).uname);
+}
+objFunction()
 // Event-Listeners
 // document.getElementById("id44").addEventListeners("onclick",()=>{})
 ////////////////////////////////////////////////////////////////////
